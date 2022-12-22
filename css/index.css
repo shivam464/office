@@ -121,7 +121,7 @@ ul li a {
     border: 1px solid #eae4cf;
     border-right: none;
     border-left: none;
-    margin:50px auto
+    margin: 50px auto
 }
 
 .footer-divider-logo {
@@ -134,17 +134,11 @@ ul li a {
     width: 120px;
     text-align: center;
 }
-.footer-divider-logo img{
+
+.footer-divider-logo img {
     width: 70px;
-    
+
 }
-
-
-
-
-
-
-
 
 .footer ul li {
     list-style: none;
@@ -180,7 +174,6 @@ ul li a {
     font-size: 14px;
     width: 85%;
 }
-
 
 .footer-input {
     border-bottom: 2px solid #000000;
@@ -242,6 +235,58 @@ ul li a {
     width: 100%;
 }
 
+/* pagination css */
+
+.pagination {
+    border-top: 1px solid rgb(223, 225, 225);
+    padding: 25px 15px 30px 15px;
+}
+
+.pagination-wrapper {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    
+}
+
+.socialmediaicons {
+    display: inline-block;
+    width: auto;
+    position: absolute;
+    left: 25px;
+    margin-top: 10px;
+}
+
+.pagination-pages {
+    display: inline-block;
+}
+
+.pagination-pages-number {
+    display: flex;
+    align-items: center;
+}
+
+.pages {
+    padding: 8px;
+    margin: 0 5px;
+    background-color: rgb(91 32 32);
+    color: black;
+    height: 32px;
+}
+
+.pagination-pages-number button {
+    padding: 8px 10px;
+    background-color: white;
+    margin-left: 10px;
+    border: 2px solid #d5d5d5;
+    cursor: pointer;
+}
+
+.pagination-pages-number button span {
+    margin-left: 10px;
+    font-size: 10px;
+}
 
 
 @media screen and (min-width: 600px) {
