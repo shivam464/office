@@ -270,7 +270,8 @@ ul li a {
 .pages {
     padding: 8px;
     margin: 0 5px;
-    background-color: rgb(91 32 32);
+    /* background-color: rgb(91 32 32); */
+    background-color: rgb(255, 255, 255);
     color: black;
     height: 32px;
 }
@@ -289,9 +290,10 @@ ul li a {
 }
 
 /* heading css */
-.content-wrapper{
+.content-wrapper {
     padding: 20px;
 }
+
 .heading-wrapper {
     display: flex;
     flex-direction: column;
@@ -313,24 +315,23 @@ ul li a {
 
 .Hide-filter {
     display: inline-block;
-    width: fit-content; 
-    /* width: 100%; */
+    width: fit-content;
     font-size: 14px;
-    /* max-width: 60%; */
     border: 1px solid #ccc;
     padding: 10px 10px;
     cursor: pointer;
 }
-.Hide-filter i{
-    margin-right:7px;
+
+.Hide-filter i {
+    margin-right: 7px;
 }
 
 .hide-filter-wrapper {
-    /* width: 100%; */
-    width: 20%;
-    /* background-color: red; */
+    width: 15%;
+
 }
-.filter-sortby-wrapper{
+
+.filter-sortby-wrapper {
     display: flex;
     margin-top: 30px;
 }
@@ -344,43 +345,104 @@ ul li a {
     font-size: 14px;
     color: #282c3f;
     cursor: pointer;
-    /* position: relative; */
     width: 100%;
     max-width: 200px;
     box-sizing: border-box;
     border-radius: 2px;
     border: 1px solid #d3d3d3;
 }
-.sortby-wrapper{
-    width: 100%;
+
+.sortby-wrapper {
+    width: 85%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0px 20px 15px 8px;
 }
-.filter-name{
+
+.filter-name {
     display: flex;
     align-items: center;
     opacity: 1;
     position: relative;
     top: -6px;
-    padding: 4px 20px;
+    padding: 4px 12px;
     border-radius: 18px;
     margin-right: 5px;
     border: 1px solid #707070;
+    margin-left: 13px
     /* margin-bottom: 4px; */
 }
-.filter-name span{
+
+.filter-name span {
     font-size: 13px;
     margin-right: 8px;
 }
-.filter-name i{
+
+.filter-name i {
     cursor: pointer;
 }
-.content-wrapper{
 
+.left-container {
+    width: 15%;
+    padding-top: 10px;
 }
 
+.collapsible-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0 12px 0;
+    margin-top: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.collapsible-wrapper p {
+    font-size: 16px;
+}
+
+
+
+.cards {
+    margin: 0 auto;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    padding: 20px;
+}
+.card{
+    position: relative;
+}
+.heart-icon{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.card img{
+    width: 100%;
+}
+.data-wrapper{
+    display: flex;
+}
+.right-container{
+    width: 85%;
+}
+.product-details{
+    padding: 15px 0 20px 0;
+}
+.product-details .product-name{
+    font-size: 18px;
+    color: black;
+}
+.product-details .product-price{
+    color: #4C0B36;
+    font-size: 18px;
+    line-height: 19px;
+    margin-top: 10px;
+}
 
 
 
@@ -389,6 +451,10 @@ ul li a {
 
 
 @media screen and (min-width: 600px) {
+    /* .cards {
+        grid-template-columns: repeat(2, 1fr);
+    } */
+
     .nav__link {
         display: block;
         position: static;
@@ -411,4 +477,10 @@ ul li a {
     .footer {
         display: none;
     }
+}
+
+@media (min-width: 900px) {
+    /* .cards {
+        grid-template-columns: repeat(3, 1fr);
+    } */
 }
