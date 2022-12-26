@@ -12,7 +12,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-    <script src="./js/index.js"></script>
+
 </head>
 
 <body>
@@ -28,13 +28,51 @@
                 </ul>
             </div>
         </div>
+
+        <!---------------------------- navbar-------------------------- -->
+
         <header>
             <nav class="nav">
-                <div>
-                    <p>WOMEN</p>
-                    <p>MEN</p>
-                    <p>SALE</p>
-                    <p>COLLECTION</p>
+                <div class="nav-links">
+                    <ul>
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn">WOMEN
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn">MEN
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>SALE</li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn">COLLECTION
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
 
                 <div class="hamburger">
@@ -42,25 +80,43 @@
                     <span class="line"></span>
                     <span class="line"></span>
                 </div>
-                <div>
+                <div class="navbar-logo">
                     <img src="./img/logo.svg" alt="" srcset="">
                 </div>
 
                 <a href="./img//Group 2.svg"></a>
-                <div class="nav__link hide">
-                    <a href="#">OUR STORY</a>
-                    <a href="#">CRAFTSMANSHIP</a>
-                    <div>
-                        <img src="./img/Path 114.svg" alt="">
-                        <img src="./img/Path 113.svg" alt="">
-                        <img src="./img/Group 4.svg" alt="">
+                <div class="nav__link">
+                    <div class="nav-right-links">
+                        <ul>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropbtn">OUR STORY
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </button>
+                                    <div class="dropdown-content">
+                                        <a href="#">Link 1</a>
+                                        <a href="#">Link 2</a>
+                                        <a href="#">Link 3</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <p class="nav-craftsmanship">
+                            <a href="#">CRAFTSMANSHIP</a>
+                        </p>
+                    </div>
+                    <div class="nav-right-icons">
+                        <p class="nav-search-icon"><i class="fa-solid fa-magnifying-glass"></i></p>
+                        <p class="nav-heart-icon"><i class="fa-regular fa-heart"></i></p>
+                        <p class="nav-bag-icon"><i class="fa-solid fa-bag-shopping "></i></p>
+                        <div class="cart-count-container">1</div>
                     </div>
 
                 </div>
             </nav>
         </header>
 
-        <!-- Heading  -->
+        <!-- Heading--------------  -->
         <div class="content-wrapper">
             <div class="heading-wrapper">
                 <h1>Women Pashmina Shawls</h1>
@@ -86,20 +142,32 @@
                     <div class="collapsible-wrapper">
                         <p>TYPES IN SHAWL</p> <span><i class="fa-solid fa-plus"></i></span>
                     </div>
+                    <div class="content">
+                        abchd
+                    </div>
                     <div class="collapsible-wrapper">
                         <p>PRICE</p> <span><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                    <div class="content">
+                        dsjhsd
                     </div>
                     <div class="collapsible-wrapper">
                         <p>DISCOUNT</p> <span><i class="fa-solid fa-plus"></i></span>
                     </div>
+                    <div class="content">
+                        abc
+                    </div>
                 </div>
                 <div class="right-container">
-                    <div class="cards"  id="data-card">
+                    <div class="cards" id="data-card">
                     </div>
                 </div>
             </div>
         </div>
-
+        <label class="container">
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+        </label>
 
         <!--------------------------- pagination start --------------------->
         <div class="pagination">
@@ -196,6 +264,7 @@
         </footer>
 
     </div>
+    <script src="./js/index.js"></script>
 </body>
 
 <script src="./script.js"></script>

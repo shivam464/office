@@ -23,17 +23,100 @@ a {
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
+    position: relative;
+    margin: 20px 0px;
+    margin-bottom: 40px;
 }
 
-.logo {
+header {
+
+    border-bottom: 2px solid #d7d7d736;
+
+}
+
+.nav-links {
+    display: flex;
+    width: 40%;
+    justify-content: center;
+}
+
+.nav ul li {
+    list-style: none;
+}
+
+.navbar-logo {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: rgb(148, 147, 147);
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: rgb(111, 111, 111);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.nav-craftsmanship a {
+    font-size: 16px;
+    font-weight: 100;
+    margin-left: 15px;
+}
+
+.nav-right-links {
+    display: flex;
+    align-items: center;
+}
+
+/* .logo {
     font-size: 1.8rem;
     color: rgb(5, 5, 116);
     padding-left: 20px;
-}
+} */
 
 .hamburger {
     padding-right: 20px;
     cursor: pointer;
+    display: none;
 }
 
 .hamburger .line {
@@ -45,11 +128,61 @@ a {
 }
 
 .nav__link {
-    position: fixed;
-    width: 94%;
-    top: 5rem;
-    left: 18px;
-    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* position: fixed; */
+    width: 40%;
+    /* top: 5rem;
+    left: 18px; */
+    /* background-color: lightblue; */
+}
+
+/* .nav-links ul{} */
+.nav-links ul {
+    display: flex;
+    width: 80%;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-right-icons {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.nav-right-icons p {
+    padding: 10px 15px;
+    cursor: pointer;
+
+}
+
+.nav-right-icons p i {
+    font-size: 20px;
+
+}
+
+.nav-bag-icon {
+    position: relative;
+}
+
+.cart-count-container {
+    position: absolute;
+    bottom: 6px;
+    right: 24px;
+    width: 15px;
+    height: 15px;
+    background-color: #7c3232;
+    border-radius: 50%;
+    color: white;
+    /* margin: auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8px;
+
 }
 
 .nav__link a {
@@ -58,14 +191,15 @@ a {
     padding: 10px 0;
 }
 
-.nav__link a:hover {
+/* .nav__link a:hover {
     background-color: lightcoral;
-}
+} */
 
-.hide {
+/* .hide {
     display: none;
-}
+} */
 
+/* --------------------------topheader css----------------------- */
 .topheader {
     display: flex;
     justify-content: space-between;
@@ -449,13 +583,112 @@ a {
     margin-top: 10px;
 }
 
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked~.checkmark {
+    /* background-color: #2196F3; */
+    background-color: #982127;
+    border: 1px solid #982127;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+
+
+/* .active,
+.collapsible-wrapper:hover {
+    background-color: #555;
+} */
+
+.collapsible-wrapper:after {
+    content: '\002B';
+    color: rgb(0, 0, 0);
+    /* font-weight: bold; */
+    float: right;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
+
+
 
 
 
 
 /* Media Query for hamburger */
 
-@media screen and (min-width: 600px) {
+/* @media screen and (min-width: 600px) {
     .nav__link {
         display: block;
         position: static;
@@ -472,13 +705,13 @@ a {
     .hamburger {
         display: none;
     }
-}
+} */
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
     .footer {
         display: none;
     }
-}
+} */
 
 
 
@@ -526,7 +759,8 @@ a {
     .cards {
         gap: 10px;
         /* grid-template-columns: repeat(auto-fit, minmax(180px, 3fr)); */
-        grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));
+        /* grid-template-columns: repeat(auto-fit, minmax(auto, 1fr)); */
+        grid-template-columns: repeat(2, 1fr);
 
         padding: 10px;
     }
@@ -565,9 +799,9 @@ a {
         display: none;
     }
 
-    header {
+    /* header {
         display: none;
-    }
+    } */
 
 }
 
@@ -691,9 +925,9 @@ a {
         display: none;
     }
 
-    header {
+    /* header {
         display: none;
-    }
+    } */
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -705,7 +939,7 @@ a {
 
     .left-container {
         display: block;
-        width: 40%;
+        width: 30%;
         padding-top: 10px;
     }
 
@@ -719,7 +953,7 @@ a {
     }
 
     .hide-filter-wrapper {
-        width: 34.3%;
+        width: 30%;
     }
 
     .sortby-wrapper {
@@ -747,7 +981,7 @@ a {
         gap: 10px;
         /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
         /* grid-template-columns: repeat(auto-fit, minmax(auto, 1fr)); */
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
 
         padding: 15px;
     }
@@ -833,24 +1067,26 @@ a {
         display: flex;
     }
 
-    header {
+    /* header {
         display: block;
-    }
+    } */
 
     .topheader p {
         font-size: 12px;
         /* color: #303030;
         font-weight: 400; */
     }
+
     .topheader ul li a {
         font-size: 12px;
         /* color: #303030; */
         /* font-weight: 400; */
         padding: 7px 15px;
     }
+
     .country_img {
         width: 63px;
-    
+
     }
 
 
@@ -859,8 +1095,13 @@ a {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .example {
-        background: orange;
+    .cards {
+        gap: 10px;
+        /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+        /* grid-template-columns: repeat(auto-fit, minmax(auto, 1fr)); */
+        grid-template-columns: repeat(4, 1fr);
+
+        /* padding: 15px; */
     }
 }
 
