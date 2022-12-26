@@ -765,6 +765,10 @@ header {
         padding: 10px;
     }
 
+    header {
+        display: none;
+    }
+
     .product-details .product-name {
         font-size: 13px;
         /* color: black; */
@@ -833,6 +837,7 @@ header {
 
         padding: 10px;
     }
+    
 
     /* ---------------------pagination start --------------------- */
     .pagination {
@@ -1095,6 +1100,8 @@ header {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+
+    /* card-css(left-side and right-side) */
     .cards {
         gap: 10px;
         /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
@@ -1102,6 +1109,25 @@ header {
         grid-template-columns: repeat(4, 1fr);
 
         /* padding: 15px; */
+    }
+
+    .filter-sortby-wrapper {
+        display: flex;
+        margin-top: 30px;
+    }
+
+    .hide-filter-wrapper {
+        width: 17%;
+
+    }
+
+    .sortby-wrapper {
+        padding: 0px 18px 15px 8px;
+    }
+
+    .left-container {
+        width: 20%;
+
     }
 }
 
