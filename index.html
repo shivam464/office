@@ -138,7 +138,7 @@
                 </div>
             </div>
             <div class="data-wrapper">
-                <div class="left-container">
+                <div class="left-container" id="left-wrapper">
                     <div class="collapsible-wrapper">
                         <p>TYPES IN SHAWL</p> <span><i class="fa-solid fa-plus"></i></span>
                     </div>
@@ -158,16 +158,34 @@
                         abc
                     </div>
                 </div>
-                <div class="right-container">
+                <!-- <div class="right-container">
+                    <div class="cards" id="data-card">
+                    </div>
+                </div> -->
+                <div class="right-container" id="card-container">
                     <div class="cards" id="data-card">
                     </div>
                 </div>
+                <!-- <div id="card-container">
+                </div> -->
+                <div id="loader">
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                </div>
+                <!-- <div class="card-actions">
+                    <span>Showing
+                        <span id="card-count"></span> of
+                        <span id="card-total"></span> cards
+                    </span>
+                </div> -->
             </div>
         </div>
-        <label class="container">
+        <!-- -----------checkbox-------------->
+        <!-- <label class="container">
             <input type="checkbox" checked="checked">
             <span class="checkmark"></span>
-        </label>
+        </label> -->
 
         <!--------------------------- pagination start --------------------->
         <div class="pagination">
@@ -240,7 +258,7 @@
 
                     </ul>
                 </div>
-                <div class=" footer-col-last">
+                <div class="footer-col-last">
                     <h2>SIGN UP AND SAVE</h2>
                     <p>Subscribe to our newsletter and get 10% off your first purchase</p>
                     <div class="footer-input"><input type="text" name="" placeholder="Enter your email"

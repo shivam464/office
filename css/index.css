@@ -837,11 +837,11 @@ header {
 
         padding: 10px;
     }
-    
+
 
     /* ---------------------pagination start --------------------- */
     .pagination {
-        display: none;
+        display: block;
     }
 
 
@@ -937,10 +937,15 @@ header {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+
+    /* -----------------header----------------- */
     .filter-sortby-wrapper {
         display: flex;
     }
 
+    .content-wrapper {
+        padding: 10px;
+    }
 
     .left-container {
         display: block;
@@ -958,16 +963,17 @@ header {
     }
 
     .hide-filter-wrapper {
-        width: 30%;
+        width: 26%;
     }
 
     .sortby-wrapper {
-        padding: 0px 11px 15px 8px;
+        padding: 0px 11px 15px 4px;
     }
 
     .filter-name {
         padding: 4px 8px;
-        margin-left: 10px
+        margin-left: 10px;
+        top: 1px;
     }
 
     .filter-name span {
@@ -993,7 +999,7 @@ header {
 
     /* ---------------------pagination start --------------------- */
     .pagination {
-        display: none;
+        display: block;
     }
 
 
@@ -1103,12 +1109,16 @@ header {
 
     /* card-css(left-side and right-side) */
     .cards {
-        gap: 10px;
+        gap: 1.5rem;
         /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
         /* grid-template-columns: repeat(auto-fit, minmax(auto, 1fr)); */
         grid-template-columns: repeat(4, 1fr);
 
         /* padding: 15px; */
+    }
+
+    .collapsible-wrapper p {
+        font-size: 16px;
     }
 
     .filter-sortby-wrapper {
@@ -1126,14 +1136,155 @@ header {
     }
 
     .left-container {
-        width: 20%;
+        width: 30%;
 
     }
+
+    .hide-filter-wrapper {
+        width: 26%;
+        /* background: red; */
+    }
+
+    .content-wrapper {
+        padding: 20px;
+    }
+
+    .sortby-wrapper {
+        padding: 0px 17px 15px 8px;
+    }
+
+    .Hide-filter {
+        font-size: 14px;
+        padding: 10px 10px;
+    }
+
+    .filter-name span {
+        font-size: 13px;
+        /* margin-right: 8px; */
+    }
+
+    .filter-name {
+        /* display: flex; */
+        /* align-items: center; */
+        /* opacity: 1; */
+        /* position: relative; */
+        /* top: -6px; */
+        padding: 4px 12px;
+        /* border-radius: 18px; */
+        /* margin-right: 5px; */
+        /* border: 1px solid #707070; */
+        /* margin-left: 13px; */
+        /* margin-bottom: 4px; */
+
+    }
+
+    .sortby-container {
+        /* float: right;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; */
+        padding: 9px 7px;
+        font-size: 14px;
+        /* color: #282c3f;
+        cursor: pointer; */
+        width: 100%;
+        max-width: 187px;
+
+        /* box-sizing: border-box;
+        border-radius: 2px;
+        border: 1px solid #d3d3d3; */
+    }
+
+    /* -----------------------footer css----------------------- */
+    .footer {
+
+        padding: 2% 5%;
+    }
+
+    .footer-col {
+        width: 25%;
+        padding: 0 1%;
+        /* box-sizing: border-box;
+        text-align: start; */
+
+    }
+
+    .footer-col-last {
+        width: 40%;
+        display: inline-block;
+    }
+
+    .footer-col h2,
+    .footer-col-last h2 {
+        font-size: 16px;
+        letter-spacing: 3.2px;
+        line-height: 23px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    .footer-col-last p {
+        font-size: 14px;
+        width: 85%;
+    }
+
+    .footer-input {
+        border-bottom: 2px solid #000000;
+        background: white;
+        display: flex;
+        align-items: center;
+        margin-top: 12px;
+    }
+
+    .footer-input input {
+        border: none;
+        width: 100%;
+        background-color: transparent;
+        padding: 10px 10px 10px 0;
+    }
+
+    .footer-input button {
+        font-size: 16px;
+        cursor: pointer;
+        font-weight: 700;
+        border: none;
+        background: transparent;
+    }
+
+    .footer-social-media_container {
+        margin: 50px 0;
+    }
+
+    .footer-social-media_container h3 {
+        font-size: 14px;
+    }
+
+    .social-media {
+
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    .social-media img {
+        margin-right: 30px;
+    }
+
+    .footer-copy-right {
+        width: 100%;
+    }
+
+    .footer-copy-right p {
+        font-size: 14px;
+        margin: 0;
+        width: 100%;
+    }
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+/* @media only screen and (min-width: 1200px) {
     .example {
         background: pink;
     }
-}
+} */
