@@ -116,7 +116,6 @@ header {
 .hamburger {
     padding-right: 20px;
     cursor: pointer;
-    display: none;
 }
 
 .hamburger .line {
@@ -765,7 +764,7 @@ header {
         padding: 10px;
     }
 
-    header {
+    .nav-links,.nav__link {
         display: none;
     }
 
@@ -802,7 +801,14 @@ header {
     .topheader {
         display: none;
     }
-
+    .hamburger {
+        /* padding-right: 20px; */
+        cursor: pointer;
+        padding: 0 20px;
+    }
+    .navbar-logo img{
+        width: 90px;
+    }
     /* header {
         display: none;
     } */
@@ -863,7 +869,6 @@ header {
     .footer ul li {
         list-style: none;
         font-size: 13px;
-        /* opacity: 0.8; */
         line-height: 20px;
 
     }
@@ -872,14 +877,12 @@ header {
         display: block;
         width: 25%;
         padding-bottom: 10px;
-        /* background-color: red; */
     }
 
     .footer-col h2,
     .footer-col-last h2 {
         font-size: 14px;
         letter-spacing: 1px;
-        /* line-height: 15px; */
         font-weight: 100;
         margin-bottom: 5px;
 
@@ -892,10 +895,7 @@ header {
 
     .footer-input button {
         font-size: 14px;
-        /* cursor: pointer; */
         font-weight: 500;
-        /* border: none; */
-        /* background: transparent; */
     }
 
     .footer-social-media_container {
@@ -908,8 +908,6 @@ header {
     }
 
     .social-media {
-        /* display: flex;
-        align-items: center; */
         margin-top: 10px;
     }
 
@@ -920,8 +918,7 @@ header {
 
     .footer-copy-right p {
         font-size: 12px;
-        /* margin: 0;
-        width: 100%; */
+
     }
 
     /* -----------end-------- */
@@ -930,9 +927,15 @@ header {
         display: none;
     }
 
-    /* header {
+    .hamburger {
         display: none;
-    } */
+    }
+
+    .nav-links ,.nav__link{
+        display:flex;
+    }
+
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -1037,7 +1040,6 @@ header {
         letter-spacing: 1px;
         font-weight: 100;
         margin-bottom: 5px;
-
     }
 
     .footer-col-last p {
@@ -1048,7 +1050,6 @@ header {
     .footer-input button {
         font-size: 14px;
         font-weight: 500;
-        /* border: none; */
     }
 
     .footer-social-media_container {
@@ -1068,7 +1069,6 @@ header {
         margin-right: 10px;
     }
 
-
     .footer-copy-right p {
         font-size: 12px;
     }
@@ -1078,26 +1078,17 @@ header {
         display: flex;
     }
 
-    /* header {
-        display: block;
-    } */
-
     .topheader p {
         font-size: 12px;
-        /* color: #303030;
-        font-weight: 400; */
     }
 
     .topheader ul li a {
         font-size: 12px;
-        /* color: #303030; */
-        /* font-weight: 400; */
         padding: 7px 15px;
     }
 
     .country_img {
         width: 63px;
-
     }
 
 
@@ -1107,14 +1098,10 @@ header {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 
-    /* card-css(left-side and right-side) */
     .cards {
         gap: 1.5rem;
-        /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
-        /* grid-template-columns: repeat(auto-fit, minmax(auto, 1fr)); */
         grid-template-columns: repeat(4, 1fr);
-
-        /* padding: 15px; */
+        padding: 21px;
     }
 
     .collapsible-wrapper p {
@@ -1136,12 +1123,12 @@ header {
     }
 
     .left-container {
-        width: 30%;
+        width: 25%;
 
     }
 
     .hide-filter-wrapper {
-        width: 26%;
+        width: 22%;
         /* background: red; */
     }
 
@@ -1164,35 +1151,15 @@ header {
     }
 
     .filter-name {
-        /* display: flex; */
-        /* align-items: center; */
-        /* opacity: 1; */
-        /* position: relative; */
-        /* top: -6px; */
         padding: 4px 12px;
-        /* border-radius: 18px; */
-        /* margin-right: 5px; */
-        /* border: 1px solid #707070; */
-        /* margin-left: 13px; */
-        /* margin-bottom: 4px; */
-
     }
 
     .sortby-container {
-        /* float: right;
-        display: flex;
-        justify-content: space-between;
-        align-items: center; */
+
         padding: 9px 7px;
         font-size: 14px;
-        /* color: #282c3f;
-        cursor: pointer; */
         width: 100%;
         max-width: 187px;
-
-        /* box-sizing: border-box;
-        border-radius: 2px;
-        border: 1px solid #d3d3d3; */
     }
 
     /* -----------------------footer css----------------------- */
@@ -1204,8 +1171,6 @@ header {
     .footer-col {
         width: 25%;
         padding: 0 1%;
-        /* box-sizing: border-box;
-        text-align: start; */
 
     }
 
